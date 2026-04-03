@@ -89,7 +89,7 @@ int main() {
 
     return 0;
 }
-// USING POPINTER
+// USING POINTER
 #include <stdio.h>
 #include <string.h>
 
