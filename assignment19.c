@@ -65,19 +65,19 @@ int main() {
     for (i = 0; i < n; i++) {
         printf("\nEnter details of employee %d\n", i + 1);
 
-        printf("Name: ");
+        printf("\nName: ");
         scanf("%s", e[i].name);
 
-        printf("Designation: ");
+        printf("\nDesignation: ");
         scanf("%s", e[i].designation);
 
-        printf("Gender (M/F): ");
+        printf("\nGender (M/F): ");
         scanf(" %c", &e[i].gender);
 
-        printf("Date of Joining: ");
+        printf("\nDate of Joining: ");
         scanf("%s", e[i].doj);
 
-        printf("Salary: ");
+        printf("\nSalary: ");
         scanf("%f", &e[i].salary);
     }
 
