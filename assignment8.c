@@ -7,12 +7,12 @@ int main() {
     printf("Enter marks of 5 subjects:\n");
     scanf("%f %f %f %f %f", &m1, &m2, &m3, &m4, &m5);
 
-    // Check PASS or FAIL
+    
     if (m1 < 40 || m2 < 40 || m3 < 40 || m4 < 40 || m5 < 40) {
         printf("\nResult: FAIL\n");
     } 
     else {
-        // Calculate total and percentage
+        
         total = m1 + m2 + m3 + m4 + m5;
         percentage = total / 5;
 
@@ -20,7 +20,7 @@ int main() {
         printf("Percentage = %.2f%%\n", percentage);
         printf("Result: PASS\n");
 
-        // Grade calculation
+        
         if (percentage >= 75) {
             printf("Grade: Distinction\n");
         }
