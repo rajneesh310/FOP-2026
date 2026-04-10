@@ -5,16 +5,16 @@ struct employee {
     char name[50];
     char designation[50];
     char gender;
-    char doj[20];   // date of joining
+    char doj[20];   
     float salary;
 };
 
-// Function to count total employees
+
 void totalEmployees(int n) {
     printf("\nTotal number of employees: %d\n", n);
 }
 
-// Function to count male and female employees
+
 void countGender(struct employee e[], int n) {
     int male = 0, female = 0, i;
 
@@ -41,7 +41,7 @@ void highSalary(struct employee e[], int n) {
     }
 }
 
-// Function to display employees with designation "asst manager"
+
 void asstManager(struct employee e[], int n) {
     int i;
     printf("\nEmployees with designation 'asst manager':\n");
@@ -81,7 +81,7 @@ int main() {
         scanf("%f", &e[i].salary);
     }
 
-    // Function calls
+    
     totalEmployees(n);
     countGender(e, n);
     highSalary(e, n);
@@ -89,7 +89,7 @@ int main() {
 
     return 0;
 }
-// USING POINTER
+
 #include <stdio.h>
 #include <string.h>
 
@@ -101,12 +101,12 @@ struct employee {
     float salary;
 };
 
-// a) Total employees
+
 void totalEmployees(int n) {
     printf("\nTotal number of employees: %d\n", n);
 }
 
-// b) Count male and female employees
+
 void countGender(struct employee *e, int n) {
     int i, male = 0, female = 0;
 
@@ -121,7 +121,7 @@ void countGender(struct employee *e, int n) {
     printf("\nFemale Employees: %d\n", female);
 }
 
-// c) Employees with salary > 10000
+
 void highSalary(struct employee *e, int n) {
     int i;
     printf("\nEmployees with salary more than 10000:\n");
@@ -133,7 +133,7 @@ void highSalary(struct employee *e, int n) {
     }
 }
 
-// d) Employees with designation "asst manager"
+
 void asstManager(struct employee *e, int n) {
     int i;
     printf("\nEmployees with designation 'asst manager':\n");
@@ -154,7 +154,7 @@ int main() {
     struct employee e[n];
     struct employee *ptr = e;   // pointer to structure
 
-    // Input details
+    
     for (i = 0; i < n; i++) {
         printf("\nEnter details of employee %d\n", i + 1);
 
@@ -174,7 +174,7 @@ int main() {
         scanf("%f", &(ptr + i)->salary);
     }
 
-    // Function calls
+    
     totalEmployees(n);
     countGender(ptr, n);
     highSalary(ptr, n);
