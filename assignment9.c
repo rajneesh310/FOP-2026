@@ -9,14 +9,14 @@ int main() {
 
     original = num;
 
-    // Extract digits and calculate sum of cubes
+    
     while (num > 0) {
         remainder = num % 10;
         sum = sum + (remainder * remainder * remainder);
         num = num / 10;
     }
 
-    // Check Armstrong condition
+    
     if (sum == original) {
         printf("%d is an Armstrong number.\n", original);
     } else {
