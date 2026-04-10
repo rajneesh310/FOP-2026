@@ -16,7 +16,7 @@ int main() {
 
     struct student s[n];
 
-    // Input details
+    
     for (i = 0; i < n; i++) {
         printf("\nEnter details of student %d\n", i + 1);
 
@@ -31,17 +31,17 @@ int main() {
             scanf("%f", &s[i].marks[j]);
         }
 
-        // Calculate total
+        
         s[i].total = 0;
         for (j = 0; j < 3; j++) {
             s[i].total += s[i].marks[j];
         }
 
-        // Calculate percentage
+        
         s[i].percentage = s[i].total / 3;
     }
 
-    // Display results
+    
     printf("\n--- Student Results ---\n");
     for (i = 0; i < n; i++) {
         printf("\nStudent %d\n", i + 1);
