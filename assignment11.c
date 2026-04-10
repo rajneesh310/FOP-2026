@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-// a) Square root
+
 void squareRoot(double n) {
     if (n < 0)
         printf("Square root of negative number is not real.\n");
@@ -9,17 +9,16 @@ void squareRoot(double n) {
         printf("Square root of %.2f = %.4f\n", n, sqrt(n));
 }
 
-// b) Square
+
 void square(double n) {
     printf("Square of %.2f = %.2f\n", n, n * n);
 }
 
-// c) Cube
 void cube(double n) {
     printf("Cube of %.2f = %.2f\n", n, n * n * n);
 }
 
-// d) Check prime
+
 void checkPrime(int n) {
     if (n < 2) {
         printf("%d is NOT a prime number.\n", n);
@@ -38,7 +37,7 @@ void checkPrime(int n) {
         printf("%d is NOT a prime number.\n", n);
 }
 
-// e) Factorial
+
 void factorial(int n) {
     if (n < 0) {
         printf("Factorial of a negative number is undefined.\n");
@@ -50,7 +49,7 @@ void factorial(int n) {
     printf("Factorial of %d = %lld\n", n, fact);
 }
 
-// f) Prime factors
+
 void primeFactors(int n) {
     if (n < 2) {
         printf("No prime factors for %d.\n", n);
